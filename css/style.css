@@ -7,11 +7,19 @@ body {
     --main-column: 80%;
     --padding-schede: 25px;
     --main-color: #0084FD;
+    --second-color: #9792E4;
+    --third-color: #B5DDFF;
+    --fourth-color:#333333;
+
 }
 
 /* classi variabili */
 
-.main-column {width: var(--main-column);}
+.main-column {
+    width: var(--main-column);
+    margin: 0   auto;
+
+}
 .p-scheda  {padding: var(--padding-schede);}
 
 
@@ -31,8 +39,8 @@ header a, #logo {
 
 /* CARDS  */
 
-.card {
-    background-color: #B5DDFF;
+.demo-card {
+    background-color: var(--third-color);
     min-height: 150px;
     width: 100%;
     margin-bottom: 20px;
@@ -56,4 +64,52 @@ header a, #logo {
     background-color: white;
     min-height: 200px;
     border-radius: 20px;
+}
+
+/* testimonials  */
+
+.test-card {
+    width: 100%;
+    min-height: 200px;
+    background-color: var(--second-color);
+    border-radius: 20px;
+    margin-bottom: 6px;
+
+}
+
+/* benefit */
+
+#benefit {background-color: var(--second-color);}
+#benefit > div div {
+    background-color: white;
+    min-height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* get started */
+
+#get-started {
+    background-color: var(--second-color);
+}
+#get-started > div * {
+    margin-bottom: 16px;
+}
+
+/* footer  */
+
+footer p {    margin-bottom: 16px;}
+footer {
+    background-color: var(--fourth-color);
+}
+
+
+
+/****************** MEDIA QUERY *****************/
+
+@media only screen and (min-height:768px) {
+    
+    #card-container {
+        flex-direction: row;
+    }
 }
