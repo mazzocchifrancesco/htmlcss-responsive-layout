@@ -5,6 +5,7 @@ body {
 
 :root {
     --main-column: 80%;
+    --max-main-column: 50%;
     --padding-schede: 25px;
     --main-color: #0084FD;
     --second-color: #9792E4;
@@ -36,6 +37,7 @@ header a, #logo {
     background-color: grey;
 
 }
+.desktop-link {display: none;}
 
 /* CARDS  */
 
@@ -107,9 +109,9 @@ footer {
 
 /****************** MEDIA QUERY *****************/
 
-/* 768 px  */
+/* 480 px  */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 480px) {
 
     /* DEMO CARD  */
     #demo-container {
@@ -144,10 +146,36 @@ footer {
     #about-us > div {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-between;
     }
     #about-us > div div {
         width: calc(50% - 10px);
     }
+}
+
+/* 768px  */
+
+@media only screen and (min-width: 768px) {
+
+    .main-column {
+        max-width: 900px;
+        margin: 0   auto;
+    } 
+
+    /* header  */
+
+    .desktop-link {display: inline-block;}
+    #icon {display: none;}
+
+    /* strategic planning  */
+    #strategic-planning > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #strategic-planning > div > div {
+        width: calc(50% - 10px);
+    }
+
+
 }
