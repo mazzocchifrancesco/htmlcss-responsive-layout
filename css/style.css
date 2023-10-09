@@ -107,9 +107,47 @@ footer {
 
 /****************** MEDIA QUERY *****************/
 
-@media only screen and (min-height:768px) {
-    
-    #card-container {
+/* 768 px  */
+
+@media only screen and (min-width: 768px) {
+
+    /* DEMO CARD  */
+    #demo-container {
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .demo-card {
+        width: calc(100% / 3 - 20px);
+        min-height: 150px;
+    }
+    #double-card {
+        width: calc(100% / 3 * 2 + -10px);
+        min-height: 150px;
+
+    }
+
+    /* benefit  */
+    #benefit > div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #benefit h2 {width: 100%;}
+    #benefit > div div {
+        width: calc(50% - 10px);
+    }
+
+    /* about us  */
+
+    #about-us > div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #about-us > div div {
+        width: calc(50% - 10px);
     }
 }
