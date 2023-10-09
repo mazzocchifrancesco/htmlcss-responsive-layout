@@ -1,0 +1,59 @@
+body {
+    font-family: 'Open Sans', sans-serif;}
+
+/* VARIABILI  */
+
+:root {
+    --main-column: 80%;
+    --padding-schede: 25px;
+    --main-color: #0084FD;
+}
+
+/* classi variabili */
+
+.main-column {width: var(--main-column);}
+.p-scheda  {padding: var(--padding-schede);}
+
+
+/* generiche */
+.bg-azzurrino {background-color: #B5DDFF;}
+
+/* HEADER  */
+
+header {background-color: var(--main-color);}
+header a, #logo {
+    display: inline-block;
+    min-height: 50px;
+    min-width: 50px;
+    background-color: grey;
+
+}
+
+/* CARDS  */
+
+.card {
+    background-color: #B5DDFF;
+    min-height: 150px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+#double-card {
+    min-height: 300px;
+}
+
+/* strategic planning  */
+
+#strategic-planning {
+    background-color: #9792E4;
+}
+
+#strategic-planning > div * {
+    border: red dashed 1px;
+}
+#inside-card {
+    background-color: white;
+    min-height: 200px;
+    border-radius: 20px;
+}

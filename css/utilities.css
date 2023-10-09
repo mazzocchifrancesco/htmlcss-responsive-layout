@@ -204,10 +204,12 @@
 /*** ALTEZZA ***/
 
 
+.mh-50 {min-height: 50px;}
 .mh-100 {min-height: 100px;}
 .mh-200 {min-height: 200px;}
 .mh-400 {min-height: 400px;}
 .mh-500 {min-height: 500px;}
+
 
 .h-100 {height: 100%;}
 .h-50 {height: 50%;}
