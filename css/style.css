@@ -6,6 +6,7 @@ body {
 
 :root {
     --main-column: 80%;
+    --main-column-768: 90%;
     --max-main-column: 50%;
     --padding-schede: 25px;
     --main-color: #0084FD;
@@ -58,7 +59,7 @@ header a {
 }
 .desktop-link {display: none;}
 
-/* CARDS  */
+/* DEMO CARDS  */
 
 .demo-card {
     background-color: var(--third-color);
@@ -72,7 +73,7 @@ header a {
     align-items: center;
     text-align: center;
 }
-#demo-container img {
+#phone-pic {
     width: 80%;
     margin: auto;
 }
@@ -126,7 +127,6 @@ header a {
 
 #testimonials h2 {color: var(--second-color);}
 .test-card {
-
     background-color: var(--second-color);
     border-radius: 40px;
     margin: 24px 0;
@@ -202,9 +202,14 @@ footer {
 
 /****************** MEDIA QUERY *****************/
 
-/* 480 px  */
+/* 768 px  */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 768px) {
+
+    .main-column {
+        width: var(--main-column-768);
+        margin: 0   auto;
+    }
 
     /* DEMO CARD  */
     #demo-container {
@@ -217,7 +222,22 @@ footer {
     }
     #double-card {
         width: calc(100% / 3 * 2 + -10px);
+        align-items: start;
+        text-align: left;
     }
+    #phone-pic {
+        margin: 0;
+        width: 50%;
+    }
+    #demo-container .blue-button {width: 50%;}
+
+    /* testimonial  */
+
+    .test-card {
+        flex-direction: row;
+        text-align: left;
+        }
+    .test-card .pic-round {margin-right: 16px;}
 
     /* benefit  */
     #benefit > div {
@@ -239,13 +259,30 @@ footer {
         justify-content: space-between;
     }
     #about-us > div div {
-        width: calc(50% - 10px);
+        width: calc(50% - 20px);
     }
+    #about-pic-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 33%;
+    }
+
+    /* get started  */
+
+    #get-started .main-column {
+        width: 60%;
+    }
+
+    /* footer  */
+
+    footer .main-column {width: 60%;}
 }
 
-/* 768px  */
+/* 992 px  */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
 
     .main-column {
         max-width: 900px;
