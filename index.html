@@ -6,48 +6,79 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utilities.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
 
         <!-- NAVBAR -->
-        <nav class="d-flex main-column py-6 flex-justify-between">
-            <div id="logo">LOGO</div>
+        <nav class="d-flex w-90 mx-auto py-16 flex-justify-between">
+
+                <img src="img/logo.png" alt="logo">
+
             <div>
                 <a class="desktop-link" href="">Planning</a>
                 <a class="desktop-link" href="">Testimonials</a>
                 <a class="desktop-link" href="">Features</a>
                 <a class="desktop-link" href="">About Us</a>
-                <a id="icon" href="#">ICONA</a>
+                <a class="desktop-link white-button" href="">Get Started</a>
+                <a id="icon" href="#"><i class="fa-solid fa-bars fsize-24"></i></a>
             </div>
         </nav>
     </header>
+
     <!-- CARDS -->
     <section id="demo-container" class="d-flex flex-column main-column py-64">
-        <div class="demo-card" id="double-card"></div>
-        <div class="demo-card"></div>
-        <div class="demo-card"></div>
-        <div class="demo-card"></div>
-        <div class="demo-card"></div>
+        <div class="demo-card" id="double-card">
+            <div class="g-16 d-flex flex-column">
+                <h2>Get a demo application</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minima commodi temporibus labore quod beatae earum, nulla et eveniet nam.</p>
+                <a href="#" class="blue-button"><i class="fa-brands fa-apple"></i> App Store</a>
+            </div>
+            <img src="img/phone.png" alt="phone" id="phone-pic">
+        </div>
+        <div class="demo-card">
+            <i class="fa-solid fa-file-code"></i>
+            <h2>Clean code</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minima commodi temporibus labore quod beatae earum, nulla et eveniet nam.</p>
+        </div>
+        <div class="demo-card">
+            <i class="fa-solid fa-compass-drafting"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minima commodi temporibus labore quod beatae earum, nulla et eveniet nam.</p>
+        </div>
+        <div class="demo-card">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Developement</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minima commodi temporibus labore quod beatae earum, nulla et eveniet nam.</p>
+        </div>
+        <div class="demo-card">
+            <i class="fa-solid fa-bullhorn"></i>
+            <h2>Branding</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minima commodi temporibus labore quod beatae earum, nulla et eveniet nam.</p>
+        </div>
     </section>
 
     <!-- STRATEGIC PLANNING -->
     <section id="strategic-planning" class="">
         <!-- container  -->
         <div class="d-flex flex-column main-column py-64">
-            <div class="mh-300 c-white mb-10">
-                <div class="mh-300 mb-10">IMG</div>
-                <h2>testo</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, assumenda.</p>
+            <div class="c-white py-35">
+                <img src="img/planning1.png" alt="planning-1" class="w-100">
+                <h2 class="py-35 fsize-em-2">Strategic Planning</h2>
+                <p class="fsize-14">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione sint cupiditate eum vero, facilis aut soluta voluptates aliquid? Velit ad atque totam mollitia obcaecati aspernatur, libero distinctio dolorum dicta iure.
+                Dolore, voluptate? voluptatem amet consectetur non, incidunt a. Voluptatum saepe iste officiis mollitia maxime.</p>
             </div>
             <div id="inside-card" class="">
-                <div class="mh-100 mb-10">IMG</div>
-                <div class="mh-100 mb-10">
-                    <h2>testo</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, assumenda.</p>
+                <img src="img/planning2.png" alt="planning-2" class="w-100">
+                <div class="">
+                    <h2 class="fsize-em-1-5 py-16">App Development</h2>
+                    <p>Develop an on-demand app for your delivery business to reach your targeted customers without any interruption.</p>
                 </div>
-                <div>BOTTONE</div>
+                <a href="#" id="strategic-button"><i class="fa-solid fa-arrow-down c-black"></i></a>
             </div>
         </div>
     </section>
@@ -56,27 +87,86 @@
     <section id="testimonials" class=" py-64 text-center">
         <div class="main-column">
             <div class="mb-6">
-                <p>TESTIMONIALS</p>
-                <h2>we are committed expert partners</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, perspiciatis.</p>
+                <p class="fsize-em-1-5">TESTIMONIALS</p>
+                <h2 class="py-35 fsize-em-2">We are committed expert partners</h2>
+                <p>We place huge value on strong relationships and have seen the benefit they bring to our business. Customer feedback is vital in helping us to get it right.</p>
             </div>
-            <div class="test-card"></div>
-            <div class="test-card"></div>
-            <div class="test-card"></div>
-
+            <div class="test-card p-scheda">
+                <div class="pic-round">
+                    <img src="img/testimonial1.jpg" alt="testimonial1" class="h-100">
+                </div>
+                <p class="py-35">
+                    <i class="fa-solid fa-quote-left"></i>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, laudantium, debitis ipsam delectus consectetur, quas voluptate alias ullam repellendus quam cumque dolores architecto id inventore!
+                    <i class="fa-solid fa-quote-right"></i>
+                </p>
+                <p class="we-700">NAT REYNOLDS</p>
+            </div>
+            <div class="test-card p-scheda">
+                <div class="pic-round">
+                    <img src="img/testimonial2.jpg" alt="testimonial2" class="h-100">
+                </div>
+                <p class="py-35">
+                    <i class="fa-solid fa-quote-left"></i>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, laudantium, debitis ipsam delectus consectetur, quas voluptate alias ullam repellendus quam cumque dolores architecto id inventore!
+                    <i class="fa-solid fa-quote-right"></i>
+                </p>
+                <p class="we-700">CELIA ALMEDA</p>
+            </div>
+            <div class="test-card p-scheda">
+                <div class="pic-round">
+                    <img src="img/testimonial3.jpg" alt="testimonial3" class="h-100">
+                </div>
+                <p class="py-35">
+                    <i class="fa-solid fa-quote-left"></i>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, laudantium, debitis ipsam delectus consectetur, quas voluptate alias ullam repellendus quam cumque dolores architecto id inventore!
+                    <i class="fa-solid fa-quote-right"></i>
+                </p>
+                <p class="we-700">BOB ROBERTS</p>
+            </div>
         </div>
         </section>
 
         <!-- BENEFIT  -->
         <section id="benefit" class="py-64 text-center">
             <div class="main-column">
-                <h2 class="c-white">Benefit of working with us</h2>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <h2 class="c-white fsize-em-2 pb-35">Benefit of working with us</h2>
+                <div class="benefit-card">
+                    <h1 class="fsize-em-3 pt-16">01</h1>
+                    <h2 class="py-35 fsize-em-1-5">Hight Quality</h2>
+                    <p class="pb-35">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+                    <a href="#" class="violet-button">more</a>
+                </div>
+                <div class="benefit-card">
+                    <h1 class="fsize-em-3 pt-16">02</h1>
+                    <h2 class="py-35 fsize-em-1-5">Creative Team</h2>
+                    <p class="pb-35">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+                    <a href="#" class="violet-button">more</a>
+                </div>
+                <div class="benefit-card">
+                    <h1 class="fsize-em-3 pt-16">03</h1>
+                    <h2 class="py-35 fsize-em-1-5">Amazing Results</h2>
+                    <p class="pb-35">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+                    <a href="#" class="violet-button">more</a>
+                </div>
+                <div class="benefit-card">
+                    <h1 class="fsize-em-3 pt-16">04</h1>
+                    <h2 class="py-35 fsize-em-1-5">Best Pricing</h2>
+                    <p class="pb-35">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+                    <a href="#" class="violet-button">more</a>
+                </div>
+                <div class="benefit-card">
+                    <h1 class="fsize-em-3 pt-16">05</h1>
+                    <h2 class="py-35 fsize-em-1-5">Innovation</h2>
+                    <p class="pb-35">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+                    <a href="#" class="violet-button">more</a>
+                </div>
+                <div class="benefit-card">
+                    <h1 class="fsize-em-3 pt-16">06</h1>
+                    <h2 class="py-35 fsize-em-1-5">24/7 Support</h2>
+                    <p class="pb-35">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
+                    <a href="#" class="violet-button">more</a>
+                </div>
             </div>
         </section>
 
@@ -84,19 +174,19 @@
         <section id="about-us" class="py-64">
             <div class="main-column">
                 <div>
-                    <h2 class="mb-20">About Us</h2>
-                    <p class="mb-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui nulla, totam facilis odio sapiente consectetur repellat accusantium ut saepe ducimus facere nisi ad, iste esse doloribus, doloremque possimus vitae ratione.
-                    Quod fugit similique distinctio delectus obcaecati inventore sunt voluptates ea veritatis iure provident ratione dolor, sit cum facere sapiente praesentium! Provident sed excepturi asperiores esse voluptatem, hic placeat adipisci totam.
+                    <h1 class="fsize-em-3 py-35">About Us</h1>
+                    <p class="mb-20"> fugit similique distinctio delectus obcaecati inventore sunt voluptates ea veritatis iure provident ratione dolor, sit cum facere sapiente praesentium! Provident sed excepturi asperiores esse voluptatem, hic placeat adipisci totam.
                     Quas iusto aliquid sunt nobis sapiente accusantium perferendis quasi atque iure quo ad qui totam veniam incidunt esse, facere molestiae! Ducimus modi voluptatum mollitia vero quisquam nostrum voluptatem sunt porro.</p>
-                    <p class="mb-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui nulla, totam facilis odio sapiente consectetur repellat accusantium ut saepe ducimus facere nisi ad, iste esse doloribus, doloremque possimus vitae ratione.
-                        Quod fugit similique distinctio delectus obcaecati inventore sunt voluptates ea veritatis iure provident ratione dolor, sit cum facere sapiente praesentium! Provident sed excepturi asperiores esse voluptatem, hic placeat adipisci totam.
+                    <p class="mb-20">Quod fugit similique distinctio delectus obcaecati inventore sunt voluptates ea veritatis iure provident ratione dolor, sit cum facere sapiente praesentium! Provident sed excepturi asperiores esse voluptatem, hic placeat adipisci totam.
                         Quas iusto aliquid sunt nobis sapiente accusantium perferendis quasi atque iure quo ad qui totam veniam incidunt esse, facere molestiae! Ducimus modi voluptatum mollitia vero quisquam nostrum voluptatem sunt porro.</p>
                 </div>
-                <div class="bg-red mh-200">
-                    <div class="round-img">IMMAGINE TONDA</div>
-                    <h3></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eveniet!</p>
-                    <div>BOTTONE linkedin</div>
+                <div class="ps-relative">
+                    <div class="pic-round w-50 my-35 ">
+                        <img src="img/about.jpg" alt="about-guy" class="h-100">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <p class="second-color-text fsize-em-1-5 we-700 mb-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eveniet!</p>
+                    <a href="#" class="violet-button"><i class="fa-brands fa-linkedin"></i> Find me on linkedin</a>
                 </div>
             </div>
         </section>
@@ -104,20 +194,21 @@
         <!-- GET STARTED -->
         <section id="get-started" class="py-64">
             <div class="main-column c-white text-center">
-                <p>GET STARTED</p>
-                <p>Simple, Transparent Pricing</p>
-                <p>It's FREE!</p>
-                <p>We're still in beta and we will be for awhile. As we add more functionality, we'll look into other plans with more controls.</p>
-                <div>bottone GET STARTED</div>
-                <p>copyright</p>
+                <p class="c-lightgrey py-16">GET STARTED</p>
+                <p class="c-white fsize-em-2 we-700">Simple, Transparent Pricing</p>
+                <p id="free" class="fsize-em-3 we-700 py-35">It's FREE!</p>
+                <p class="c-lightgrey py-35">We're still in beta and we will be for awhile. As we add more functionality, we'll look into other plans with more controls.</p>
+                <a href="#" class="white-button">Get Started</a>
+                <p class="c-white fsize-em-0-75 py-35">Copyright 2021 Boolean &bull; Classe XX &bull; <a href="#" class="c-white">Privacy policy</a></p>
             </div>
         </section>
 
         <!-- FOOTER  -->
         <footer class="py-64 c-white">
-            <div class="main-column">
+            <div class="main-column text-center">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum odio reiciendis hic, qui enim suscipit.</p>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="pt-64"><a href="#" class="second-color-text">Lorem ipsum</a> dolor sit amet consectetur.</p>
+                <a href="#" class="second-color-text">Boolean careers</a>
             </div>
         </footer>
     </body>

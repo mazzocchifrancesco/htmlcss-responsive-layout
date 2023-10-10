@@ -76,6 +76,7 @@
 .py-20 { padding: 20px 0; }
 .p-25 { padding: 25px; }
 .p-35 { padding: 35px; }
+.pt-35 { padding-top: 35px; }
 .py-35 { padding: 35px 0; }
 .pb-35 { padding-bottom: 35px; }
 .p-50 { padding: 50px; }
@@ -90,6 +91,12 @@
 .px-64 { padding: 0 64px; }
 .pt-100 { padding-top: 100px; }
 .py-100 { padding: 100px 0; }
+
+/* GAP */
+
+.g-10 {gap: 10px;}
+.g-16 {gap: 16px;}
+
 
 
 /*** BACKGROUND COLORS ***/
@@ -134,8 +141,13 @@
 
 /* em  */
 
-.fsize-em-1-25 {font-size: 1.25em;}
 .fsize-em-0-75 {font-size: 0.75em;}
+.fsize-em-1-25 {font-size: 1.25em;}
+.fsize-em-1-5 {font-size: 1.5em;}
+.fsize-em-2 {font-size: 2em;}
+.fsize-em-2-5 {font-size: 2.5em;}
+.fsize-em-3 {font-size: 3em;}
+
 
 /* font weight  */
 
