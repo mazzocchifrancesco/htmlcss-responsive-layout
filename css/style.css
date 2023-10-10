@@ -122,7 +122,6 @@ header a {
 #strategic-button i {
     font-size: 2em;
 }
-
 /* testimonials  */
 
 #testimonials h2 {color: var(--second-color);}
@@ -258,15 +257,13 @@ footer {
         flex-direction: row;
         justify-content: space-between;
     }
-    #about-us > div div {
-        width: calc(50% - 20px);
-    }
+    #about-text {      width:  calc(70% - 100px);    }
     #about-pic-column {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: 33%;
+        width: 30%;
     }
 
     /* get started  */
@@ -285,23 +282,29 @@ footer {
 @media only screen and (min-width: 992px) {
 
     .main-column {
-        max-width: 900px;
+        max-width: 992px;
         margin: 0   auto;
     } 
-
-    /* demo cards  */
-
-    #double-card {
-        flex-direction: row;
-    }
-    #phone-pic {width: 45%;}
 
     /* header  */
 
     .desktop-link {display: inline-block;}
     #icon {display: none;}
 
-    /* strategic planning  */
+    /* demo cards  */
+
+    #double-card {
+        flex-direction: row;
+    }
+
+    /* planning  */
+
+    #inside-card img {
+        width: 60%;
+    }
+    #planning-fixer {justify-content: flex-end;}
+    #inside-card {height: 70%;}
+
     #strategic-planning > div {
         display: flex;
         flex-direction: row;
@@ -310,6 +313,15 @@ footer {
     #strategic-planning > div > div {
         width: calc(50% - 10px);
     }
+  
 
+    /* get started  */
 
+    #get-started .main-column {
+        width: 30%;
+    }
+
+    /* footer  */
+
+    footer .main-column {width: 30%;}
 }
