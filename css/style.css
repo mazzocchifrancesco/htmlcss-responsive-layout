@@ -246,7 +246,7 @@ footer {
         justify-content: space-between;
     }
     #benefit h2 {width: 100%;}
-    #benefit > div div {
+    .benefit-card {
         width: calc(50% - 10px);
     }
 
@@ -295,6 +295,12 @@ footer {
 
     #double-card {
         flex-direction: row;
+    }
+
+    /* benefit  */
+
+    .benefit-card {
+        width: calc(100% / 3 - 20px);
     }
 
     /* planning  */
